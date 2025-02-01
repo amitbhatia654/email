@@ -6,11 +6,14 @@ module.exports = {
     entry: "./src/index",
     mode: "development",
     devServer: {
-        static: path.join(__dirname, 'dist'),
+        static: path.join(__dirname, 'build'),
         port: 3001,
     },
     output: {
-        publicPath: "auto",
+        path: path.resolve(__dirname, "build"), // Ensure output is set
+        filename: "bundle.js",
+        publicPath: "/",
+
     },
     module: {
         rules: [

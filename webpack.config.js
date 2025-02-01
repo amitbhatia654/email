@@ -12,7 +12,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "build"), // Ensure output is set
         filename: "bundle.js",
-        publicPath: "/",
+        publicPath: "auto",
 
     },
     module: {
